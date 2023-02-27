@@ -120,7 +120,7 @@ fun main() {
         print("Please enter the number of the habitat you would like to view: ")
         val input = readln()
         val skc: Int? = try { input.toInt() } catch (e: NumberFormatException) { null }
-        if(skc != null) if(skc in 0..5) println(animals[skc]) else println("Wrong number input from 0 to 5")
+        if(skc != null) if(skc in 0..5) println(animals[skc]) else println("Wrong number. Please input a number from 0 to 5 or enter - exit to exit")
         else println("Input a number")
     }while(input != "exit")
     println("See you later!")
